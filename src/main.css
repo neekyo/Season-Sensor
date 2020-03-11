@@ -1,1 +1,47 @@
+.text {
+	font-size: 32px;
+}
 
+.icon-left {
+	position: absolute;
+	top: .5rem;
+	left: .5rem;
+}
+
+.icon-right {
+	position: absolute;
+	bottom: .5rem;
+	right: .5rem;
+}
+
+.season-display {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.season-display.winter i {
+	color: blue;
+}
+
+.season-display.summer i {
+	color: red;
+}
+
+.winter {
+	background-color: aliceblue;
+}
+
+.summer {
+	background-color: orange;
+}
+
+.button {
+	color: white;
+	background-color: black;
+	border-radius: .5rem;
+	position: absolute;
+	top: 55%;
+	height: 2rem;
+}
