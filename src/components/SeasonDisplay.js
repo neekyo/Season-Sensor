@@ -1,9 +1,17 @@
 import React from 'react';
 
 const seasonConfig = {
+	spring: {
+		text: 'Flowers are smelling great!',
+		iconName: 'tree'
+	},
 	summer: {
 		text: "Let's hit the beach!",
 		iconName: 'sun'
+	},
+	autumn: {
+		text: 'Gather those fruits & get your rake!',
+		iconName: 'leaf'
 	},
 	winter: {
 		text: "Burr, it's cold!",
@@ -12,9 +20,13 @@ const seasonConfig = {
 };
 
 const getSeason = (lat, month) => {
-	if (month > 2 && month < 9) {
+	if (month > 1 && month < 5) {
+		return lat > 0 ? 'spring' : 'autumn';
+	} else if (month > 4 && month < 8) {
 		return lat > 0 ? 'summer' : 'winter';
-	} else {
+	} else if (month > 7 && month < 11) {
+		return lat > 0 ? 'autumn' : 'spring';
+	} else if (month > 10 && month < 2) {
 		return lat > 0 ? 'winter' : 'summer';
 	}
 };
@@ -30,10 +42,10 @@ const SeasonDisplay = (props) => {
 			<div className={`season-display ${season}`}>
 				<i className={`icon-left massive ${iconName} icon`} />
 				<div className="text">{text}</div>
+				<i className={`icon-right massive ${iconName} icon`} />
 				<button className="button" onClick={''}>
 					Change Seasons!
 				</button>
-				<i className={`icon-right massive ${iconName} icon`} />
 			</div>
 		</React.Fragment>
 	);

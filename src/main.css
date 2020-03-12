@@ -29,12 +29,28 @@
 	color: red;
 }
 
+.season-display.autumn i {
+	color: #f3bc2e;
+}
+
+.season-display.spring i {
+	color: #f5ad94;
+}
+
 .winter {
 	background-color: aliceblue;
 }
 
 .summer {
 	background-color: orange;
+}
+
+.autumn {
+	background-color: #98482b;
+}
+
+.spring {
+	background-color: #b4f9a5;
 }
 
 .button {
