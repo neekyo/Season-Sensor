@@ -10,7 +10,7 @@ const seasonConfig = {
 		iconName: 'sun'
 	},
 	autumn: {
-		text: 'Gather those fruits & get your rake!',
+		text: 'Get your rakes ready!',
 		iconName: 'leaf'
 	},
 	winter: {
@@ -41,11 +41,9 @@ const SeasonDisplay = (props) => {
 		<React.Fragment>
 			<div className={`season-display ${season}`}>
 				<i className={`icon-left massive ${iconName} icon`} />
+				<div className="season">{season}</div>
 				<div className="text">{text}</div>
 				<i className={`icon-right massive ${iconName} icon`} />
-				<button className="button" onClick={''}>
-					Change Seasons!
-				</button>
 			</div>
 		</React.Fragment>
 	);

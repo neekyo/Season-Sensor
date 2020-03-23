@@ -14,6 +14,14 @@
 	right: .5rem;
 }
 
+.season {
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: absolute;
+	top: 5%;
+}
+
 .season-display {
 	display: flex;
 	justify-content: center;
